@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Gerenciador de Tarefas - Pagina Inicial</title>
+<!-- Registrando BootStrap -->
+<link rel="stylesheet" href="/webjars/bootstrap/css/bootstrap.min.css">
+
+                            
+</head>
+<body>
+    <!-- https://github.com/Caioom/gerenciador-novo -->
+    <!-- https://github.com/eueid/spring -->
+    <!-- https://github.com/ManoelRodriguez/Projeto-SpringBoot/ -->
+    
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	 <a class="navbar-brand" href="#"> Gerenciador de Tarefas </a>
+	  
+	  <!-- Incluindo Botão Sanduiche -->
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-app">
+                <span class="navbar-toggler-icon"></span>
+      </button>
+       
+       <div class="collapse navbar-collapse" id="navbar-app">
+          <div class="navbar-nav">
+             <a class="nav-item nav-link" href="/">Home</a>
+          </div>
+       
+       </div>
+	
+	</nav>
+	<div class="container">
+		<p>Olá ,seja bem Vindo ao Gerenciador de Tarefas; </p>
+		<p th:text="${mensagem}">  </p>
+	</div>
+	
+	<!-- Registrando JavaScript -->
+	<script src="/webjars/jquery/3.4.1/jquery.min.js"></script>
+	<script src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+	
+</body>
+</html>
